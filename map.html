@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from sahih.higertech.com/map by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Nov 2023 17:11:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8" />
+<title>Peta | Dinas Dinas Pekerjaan Umum dan Penataan Ruang Bidang Sumber Daya Air Cianjur</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="Dinas Dinas Pekerjaan Umum dan Penataan Ruang Bidang Sumber Daya Air Cianjur" name="description" />
+<meta content="Higertech Telemetry Technology" name="author" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="csrf-token" content="sSLuNNFcGvmYS0A6vhe6Q7dq7TluuDxjSAiLZzS5">
+<!-- App favicon -->
+<link rel="shortcut icon" href="favicon.ico">
+
+
+  <link href="peta/assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- third party css end -->
+
+  <link href="peta/assets/libs/selectize/selectize.min.css" rel="stylesheet" type="text/css" />
+<link href="peta/assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+<!-- icons -->
+<link href="peta/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+
+<!-- App css -->
+<link href="peta/assets/css/default/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+<link href="peta/assets/css/default/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+<link href="peta/assets/css/default/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" disabled />
+<link href="peta/assets/css/default/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" disabled />
+
+<link href="peta/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+<style>
+  .navbar-custom {
+    border-bottom: 3px solid #FFC800;
+    background-color: #0D47A1;
+    height: 80px;
+    background-image:
+      linear-gradient(to right,
+        #0D47A1, #115cd0);
+    /* linear-gradient(to right,
+                #354575, #4d64aa); */
+  }
+
+  .logo-box {
+    height: 70px;
+    width: 380px;
+    float: left;
+    transition: all .1s ease-out;
+  }
+
+  .logo-box .logo {
+    line-height: 80px;
+  }
+
+  .navbar-custom .topnav-menu .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 80px;
+  }
+
+  .topnav {
+    background: #ffffff;
+    box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+    margin-top: 80px;
+    padding: 0 calc(24px / 2);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .footer {
+    color: #ffffff;
+    background-color: #0D47A1;
+  }
+
+  .dropify-wrapper .dropify-message p {
+    font-size: 14px;
+  }
+
+  /* Small screen devices (600px and above) */
+  @media  only screen and (min-width: 380px) and (max-width: 500px) {
+
+
+    .legend.leaflet-control>span {
+      color: gray;
+    }
+
+
+    span .logo-sm {
+      margin-left: 15px !important;
+    }
+
+    a.logo.logo-light.logo-sm {
+      text-align: left !important;
+      margin-left: 15px !important;
+
+    }
+
+    #logo-lg-light img {
+      margin-left: 15px;
+    }
+
+    #logo-sm-light {
+      margin-left: 15px !important;
+      margin-right: 10px !important;
+
+    }
+
+    #hamberger-menu {
+      margin-top: 10px !important;
+    }
+
+    #logo-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 15px !important;
+    }
+
+    .logo-box.d-flex {
+      width: auto !important;
+    }
+
+    #logo-desc>span {
+      display: block !important;
+      font-size: 9px !important;
+      font-weight: bold;
+      color: white;
+
+    }
+
+    #logo-desc>span:nth-child(2) {
+      font-size: 7px !important;
+    }
+
+    #logo-desc>span:last-child {
+      font-size: 7px !important;
+
+    }
+
+
+
+  }
+
+
+
+  @media  only screen and (max-width: 379px) {
+
+
+    .legend.leaflet-control>span {
+      color: gray;
+    }
+
+
+    span .logo-sm {
+      margin-left: 8px !important;
+    }
+
+    a.logo.logo-light.logo-sm {
+      text-align: left !important;
+      margin-left: 15px !important;
+
+    }
+
+    #logo-lg-light img {
+      margin-left: 15px;
+    }
+
+
+    #logo-sm-light {
+      margin-left: 8px !important;
+      margin-right: 8px !important;
+
+    }
+
+    #hamberger-menu {
+      margin-top: 10px !important;
+    }
+
+    #logo-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 15px !important;
+    }
+
+    .logo-box.d-flex {
+      width: auto !important;
+    }
+
+    #logo-desc>span {
+      display: block !important;
+      font-size: 8px !important;
+      font-weight: bold;
+      color: white;
+
+    }
+
+    #logo-desc>span:nth-child(2) {
+      font-size: 6px !important;
+    }
+
+    #logo-desc>span:last-child {
+      font-size: 6px !important;
+
+    }
+
+
+
+  }
+
+
+
+  @media  only screen and (min-width: 501px) and (max-width: 720px) {
+
+    .legend.leaflet-control>span {
+      color: gray;
+    }
+
+
+    span .logo-sm {
+      margin-left: 15px !important;
+    }
+
+    a.logo.logo-light.logo-sm {
+      text-align: left !important;
+      margin-left: 15px !important;
+
+    }
+
+    #logo-sm-light {
+      margin-left: 15px !important;
+      margin-right: 10px !important;
+
+    }
+
+    #hamberger-menu {
+      margin-top: 10px !important;
+    }
+
+    #logo-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 15px !important;
+    }
+
+    .logo-box.d-flex {
+      width: auto !important;
+    }
+
+    #logo-desc>span {
+      display: block !important;
+      font-size: 13px !important;
+      color: white;
+      font-weight: bold;
+
+    }
+
+    #logo-desc>span:nth-child(2) {
+      font-size: 11px !important;
+    }
+
+    #logo-desc>span:last-child {
+      font-size: 11px !important;
+
+    }
+
+
+
+  }
+
+  @media  only screen and (min-width: 721px) {
+
+    .legend.leaflet-control>span {
+      color: gray;
+    }
+
+    #logo-lg-light img {
+      margin-left: 15px;
+    }
+
+
+    span .logo-sm {
+      margin-left: 15px !important;
+    }
+
+    a.logo.logo-light.logo-sm {
+      text-align: left !important;
+      margin-left: 15px !important;
+
+    }
+
+    #logo-sm-light {
+      margin-left: 15px !important;
+      margin-right: 10px !important;
+
+    }
+
+    #hamberger-menu {
+      margin-top: 10px !important;
+    }
+
+    #logo-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 15px !important;
+    }
+
+    .logo-box.d-flex {
+      width: auto !important;
+    }
+
+    #logo-desc>span {
+      display: block !important;
+      font-size: 15px !important;
+      color: white;
+      font-weight: bold;
+
+    }
+
+    #logo-desc>span:nth-child(2) {
+      font-size: 13px !important;
+    }
+
+    #logo-desc>span:last-child {
+      font-size: 13px !important;
+
+    }
+
+    body[data-sidebar-size="condensed"] .logo-box {
+      width: 60% !important;
+    }
+
+
+  }
+
+  @media  only screen and (min-width: 992px) {
+
+    .topnav {
+      /* height: 70px !important; */
+    }
+
+    #logo-desc>span {
+      display: block !important;
+      font-size: 15px !important;
+      color: white;
+      font-weight: bold;
+
+    }
+
+    #logo-desc {
+      margin-left: 10px !important;
+      padding: 10px 0 10px 0 !important;
+    }
+
+    #logo-desc>span:nth-child(2) {
+      font-size: 13px !important;
+    }
+
+    #logo-desc>span:last-child {
+      font-size: 13px !important;
+
+    }
+
+  }
+
+</style>
+
+
+
+
+  <link rel="stylesheet" href="../unpkg.com/leaflet%401.5.1/dist/leaflet.css" />
+  <link href="../api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css" rel='stylesheet' />
+  <link href='../cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.4/MarkerCluster.css' rel='stylesheet' />
+  <!-- <link href='https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.4/MarkerCluster.Default.css' rel='stylesheet' /> -->
+  <link href="peta/assets/libs/magnific-popup/magnific-popup.min.css" rel="stylesheet" type="text/css" />
+  <link href="peta/assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+
+
+  <!-- <link rel="stylesheet" href="http://sahih.higertech.com/peta/assets/maps/dist/leaflet.awesome-markers.css"> -->
+  <!-- <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" /> -->
+  <link rel="stylesheet" href="peta/assets/css/style.css">
+
+  <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css"> -->
+  <link href="peta/assets/libs/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+  <style>
+    /* .leaflet-tooltip-left:before {
+            right: 0;
+            margin-right: -12px;
+            background-color: transparent;
+            border: none;
+        }
+        .leaflet-tooltip-right:before {
+            left: 0;
+            background-color: transparent;
+            margin-left: -12px;
+            border: none;
+            } */
+    /* .leaflet-tooltip-own {
+            z-index: 1000;
+            position: absolute;
+            font-size: 10px;
+            background-color: transparent;
+            border: none;
+            opacity: 0;
+            text-shadow: -1px -1px white, 1px 1px black;
+            color: #098305;
+            color: rgba(0, 0, 0, 0.4);
+            font-weight: bold;
+            white-space: nowrap;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
+            box-shadow: none;
+        } */
+    .leaflet-tooltip-left:before {
+      right: 0;
+      margin-right: -12px;
+      border-left-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .leaflet-tooltip-right:before {
+      left: 0;
+      margin-left: -12px;
+      border-right-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .leaflet-tooltip-own {
+      position: absolute;
+      font-weight: bold;
+      padding: 4px;
+      background-color: rgba(255, 255, 255, 0.4);
+      border: 0px solid #000;
+      color: #000;
+      font-size: 10px;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      pointer-events: none;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    /* table.table-bordered.dataTable td.tma_normal {
+            background:#4DC27E;
+        }
+        table.table-bordered.dataTable td.tma_siaga_3 {
+            background:#FFDA4F;
+        }
+        table.table-bordered.dataTable td.tma_siaga_2 {
+            background:#FFA600;
+        }
+        table.table-bordered.dataTable td.tma_siaga_1 {
+            background:#EF5350;
+        }
+        table.dataTable.table-sm .th-span:after {
+            top: 28px;
+        }
+        table.dataTable.table-sm .th-span:before {
+            top: 28px;
+            right: .85em;
+        }
+        table.table-bordered.dataTable td {
+            vertical-align: middle;
+            background: rgb(255,255,255,0.7);
+        }
+
+        table.table-bordered.dataTable th:first-child, table.table-bordered.dataTable th:first-child, table.table-bordered.dataTable td:first-child, table.table-bordered.dataTable td:first-child {
+            border-left-width: 0;
+        }
+        table.table-bordered.dataTable thead tr:first-child th, table.table-bordered.dataTable thead tr:first-child td {
+            border-top-width: 0;
+        }
+        table.table-bordered.dataTable th, table.table-bordered.dataTable td {
+            border-bottom-width: 0;
+        } */
+
+    .legend {
+      padding: 6px 8px;
+      font: 14px Arial, Helvetica, sans-serif;
+      background: white;
+      background: rgba(255, 255, 255, 0.8);
+      /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+      /*border-radius: 5px;*/
+      line-height: 24px;
+      color: #555;
+    }
+
+    .legend h4 {
+      text-align: center;
+      font-size: 16px;
+      margin: 2px 12px 8px;
+      color: #777;
+    }
+
+    .legend span {
+      position: relative;
+      bottom: 3px;
+    }
+
+    .legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin: 0 8px 0 0;
+      opacity: 0.7;
+    }
+
+    .legend .das {
+      padding-top: 5px;
+      width: 18px;
+      height: 5px;
+      float: left;
+      margin: 7px 8px 0 0;
+      opacity: 0.7;
+    }
+
+    .legend .ws {
+      padding-top: 5px;
+      width: 18px;
+      height: 5px;
+      float: left;
+      margin: 7px 8px 0 0;
+      opacity: 0.7;
+    }
+
+    .legend i.icon {
+      background-size: 18px;
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* html, body {
+            height: 100%;
+        } */
+
+    .navbar-custom {
+      position: relative;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      border-radius: 8px;
+      border: none;
+      /* opacity: 0.5; */
+      background-color: rgb(13, 71, 161, 0.8);
+      /* background-image: linear-gradient(to right, #0D47A1, #3790E7); */
+      background-image: none;
+    }
+
+    .topnav {
+      position: relative;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: none;
+      /* opacity: 0.5; */
+      /* background-color: rgb(13, 71, 161, 0.8); */
+      /* background-image: linear-gradient(to right, #0D47A1, #3790E7); */
+      /* background-image: none; */
+    }
+
+    .ts-form__map-search {
+      /* margin-top: 80px; */
+      width: 40%;
+    }
+
+    #form-filter {
+      background-color: rgba(255, 255, 255, .9);
+      border-radius: .1875rem;
+      box-shadow: 0 .1875rem .9375rem rgba(0, 0, 0, .15);
+      /* padding: 1rem; */
+      border-radius: 8px;
+      max-height: 500px;
+    }
+
+    #form-filter .card-header {
+      background-color: rgba(219, 226, 240, .7);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      padding: 0.5rem 1rem;
+      padding-top: 0.5rem;
+      padding-right: 1rem;
+      padding-bottom: 0.5rem;
+      padding-left: 1rem;
+    }
+
+    .footer {
+      left: 0;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      background-color: rgb(13, 71, 161, 0.8);
+      height: 57px;
+    }
+
+    .ts-map {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Running Text */
+
+    .marquee-content p {
+      margin-right: 41px;
+      display: inline;
+      color: #FFDA50;
+      font-size: 22px;
+    }
+
+    /* Reponsive Screen */
+
+    @media  only screen and (min-width: 992px) {
+
+      .topnav {
+        /* height: 70px !important; */
+      }
+
+      #logo-desc>span {
+        display: block !important;
+        font-size: 15px !important;
+        color: white;
+        font-weight: bold;
+
+      }
+
+      #logo-desc {
+        margin-left: 10px !important;
+        padding: 10px 0 10px 0 !important;
+      }
+
+      #logo-desc>span:nth-child(2) {
+        font-size: 13px !important;
+      }
+
+      #logo-desc>span:last-child {
+        font-size: 13px !important;
+
+      }
+
+    }
+
+    @media (min-width: 2560px) and (max-width: 3839px) {
+      .marquee-content p {
+        font-size: 2.6rem;
+      }
+
+      .logo-box {
+        height: 100px;
+        width: 430px;
+        float: left;
+        transition: all 0.1s ease-out;
+      }
+
+      .logo-box .logo {
+        line-height: 100px;
+      }
+
+      .logo-lg img {
+        height: 62px;
+      }
+
+      .navbar-custom {
+        height: 100px;
+      }
+    }
+
+    /* .ts-form__map-search {
+            height: 100%;
+        } */
+
+    /* .ts-form {
+            height: auto;
+            max-height: 100%;
+            margin-bottom: 57px;
+            overflow-y: scroll;
+        } */
+
+    .carousel-item {
+      height: auto;
+    }
+
+    .ts-form__map-search {
+      padding-top: 105px;
+      padding-bottom: 85px;
+    }
+
+    .card-body .content-station {
+      flex: 1 1 auto;
+      padding: 1.2rem 0.8rem;
+    }
+
+    .card-body .content-station h5 {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .content-logger {
+      border-radius: 6px;
+      -webkit-box-shadow: 2px 5px 30px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 2px 5px 30px -5px rgba(0, 0, 0, 0.16);
+    }
+
+    .content-sensor {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+
+    .bg-default {
+      background-color: #EDF5FF;
+    }
+
+    .bg-no-data {
+      background-color: #dee1e8;
+    }
+
+    .bg-awlr-normal {
+      background-color: #4DC27E;
+    }
+
+    .bg-awlr-level1 {
+      background-color: #FFDA4F;
+    }
+
+    .bg-awlr-level2 {
+      background-color: #FFA600;
+    }
+
+    .bg-awlr-level3 {
+      background-color: #EF5350;
+    }
+
+    .bg-arr .bg-arr-am {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      /* background-color: #5bc0de; */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      background-image: url(../www.bmkg.go.id/asset/img/bg-cuaca/cerah-berawan-siang.jpg);
+    }
+
+    .bg-arr .bg-arr-pm {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      background-image: url(../www.bmkg.go.id/asset/img/bg-cuaca/cerah-berawan-siang.jpg);
+    }
+
+    .bg-arr img {
+      margin-top: 1rem;
+      width: 42px;
+      height: 42px;
+      text-align: center;
+      filter: drop-shadow(0px 0px 10px #fff);
+      -webkit-filter: drop-shadow(0px 0px 10px #fff);
+    }
+
+    .bg-arr p.text-intensity {
+      font-size: 12px;
+      font-style: italic;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    p.text-change-status {
+      font-size: 12px;
+      font-style: italic;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: #343a40;
+    }
+
+    /* .bg-arr h4 {
+            font-size: 20px;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        } */
+
+    .text-ch {
+      font-size: 14px;
+      color: #343a40;
+    }
+    }
+
+    .trip-stop {
+      width: 400px;
+      overflow: hidden;
+
+      h2 {
+        font-size: 1.4em;
+        margin-top: 0;
+        margin-bottom: .2em;
+      }
+
+      p,
+      ul,
+      h3 {
+        font-size: 1.2em;
+        font-weight: normal;
+      }
+
+      p {
+        margin: .2em 0;
+      }
+
+      .trip-stop-date {
+        color: $grey-600;
+        font-size: 1em;
+      }
+
+      ul {
+        padding: 0 0 0 1.4em;
+        margin: 0;
+      }
+
+    }
+
+    .trip-stop-image {
+      display: block;
+      float: left;
+      overflow: hidden;
+      width: 100px;
+      height: 100px;
+      text-indent: 100%;
+      color: transparent;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .trip-stop-content {
+      float: left;
+      width: 250px;
+      padding-left: 1em;
+    }
+
+    .icon-trip-stop {
+
+      display: block;
+      width: 1.5em;
+      height: 1.5em;
+      background-color: $orange-500;
+      border-radius: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+
+      &:hover {
+        background-color: $deep-orange-400;
+      }
+
+    }
+
+    .accordion-flush .accordion-item .accordion-button {
+      font-family: "Nunito", sans-serif;
+      font-size: 13px;
+    }
+
+    .custom-accordion .accordion-arrow {
+      font-size: 1.5rem;
+      position: absolute;
+      right: 0;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #2d76dd;
+      background-color: #ebf3fe;
+      box-shadow: none;
+    }
+
+    .custom-accordion a.collapsed i.accordion-arrow:before {
+      content: "\F0415";
+    }
+
+    .progress-meter {
+      min-height: 8px;
+      /* border-bottom: 1px solid rgb(160, 160, 160); */
+    }
+
+    .progress-meter>.meter {
+      position: relative;
+      float: left;
+      min-height: 8px;
+      border-width: 0px;
+      border-style: solid;
+      border-color: rgb(160, 160, 160);
+    }
+
+    .progress-meter>.meter:hover {
+      cursor: pointer;
+    }
+
+    .progress-meter>.meter-normal {
+      background-color: #4DC27E;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .progress-meter>.meter-waspada {
+      /* background-color: #CAC428; */
+      background-color: #FFDA4F;
+    }
+
+    .progress-meter>.meter-siaga {
+      background-color: #FFA600;
+    }
+
+    .progress-meter>.meter-awas {
+      background-color: #EF5350;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    .progress-meter>.meter-left {
+      border-left-width: 1px;
+    }
+
+    .progress-meter>.meter>.meter-text {
+      position: absolute;
+      display: inline-block;
+      bottom: -18px;
+      width: 100%;
+      font-weight: 600;
+      font-size: 0.75em;
+      color: rgb(160, 160, 160);
+      text-align: left;
+    }
+
+    .leaflet-popup-content {
+      margin: 13px 15px;
+      line-height: 1.4;
+    }
+
+    .leaflet-popup-content-wrapper {
+      padding: 1px;
+      text-align: left;
+      border-radius: 6px;
+    }
+
+    .logo-box {
+      height: 70px;
+      width: 390px;
+      float: left;
+      transition: all 0.1s ease-out;
+    }
+
+    body div.mfp-wrap {
+      z-index: 999999 !important;
+    }
+
+    .card-station {
+      cursor: pointer;
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="navbar-custom">
+    <div class="container-fluid">
+      <ul class="list-unstyled topnav-menu float-end mb-0">
+
+        
+
+        <li class="d-none d-xl-block">
+          <a class="nav-link waves-effect waves-light fs-5 m-0" href="index.html">Home</a>
+        </li>
+
+
+        <li class="d-none d-xl-block">
+          <a class="nav-link waves-effect waves-light fs-5 m-0" href="map.html">Peta</a>
+        </li>
+
+                <li class="d-none d-lg-inline-block">
+          <a class="nav-link waves-effect waves-light" href="login.html">
+            <i class="fe-log-in me-1"></i>LOGIN
+          </a>
+        </li>
+        
+        <li class="dropdown d-none d-lg-inline-block">
+          <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="fullscreen" href="#">
+            <i class="fe-maximize noti-icon"></i>
+          </a>
+        </li>
+
+        
+        
+      </ul>
+
+      <!-- LOGO -->
+      <div class="logo-box d-flex">
+        <div>
+          <a href="index.html" class="logo logo-dark text-center">
+            <span class="logo-sm">
+              <img src="storage/logo/0c5d0c1b-458e-4190-bb27-ced34bab7308-1695771683.png" alt="" height="30" />
+              <!-- <span class="logo-lg-text-light">UBold</span> -->
+            </span>
+            <span class="logo-lg">
+              <img src="storage/logo/0c5d0c1b-458e-4190-bb27-ced34bab7308-1695771683.png" alt="" height="20" />
+              <!-- <span class="logo-lg-text-light">U</span> -->
+            </span>
+          </a>
+
+          <a href="index.html" class="logo logo-light">
+            <span class="logo-sm" id="logo-sm-light">
+              <img src="storage/logo/0c5d0c1b-458e-4190-bb27-ced34bab7308-1695771683.png" alt="" height=" 45 " />
+            </span>
+            <span class="logo-lg" id="logo-lg-light">
+              <img class="pr-1" src="storage/logo/0c5d0c1b-458e-4190-bb27-ced34bab7308-1695771683.png" alt="" height=" 55 " />
+            </span>
+          </a>
+        </div>
+        <div id="logo-desc">
+          <span>PEMKAB CIANJUR</span>
+          <span>Dinas Pekerjaan Umum dan Penataan Ruang</span>
+          <span>Bidang Sumber Daya Air</span>
+          
+
+        </div>
+      </div>
+
+
+      <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+        <li>
+          <!-- Mobile menu toggle (Horizontal Layout)-->
+          <a class="navbar-toggle nav-link" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+            <div class="lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <!-- End mobile menu toggle-->
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  
+  <div class="content-page m-0">
+
+    <div class="content">
+      <main class="content-monitoring">
+        <div class="row mb-4">
+          <div class="col-lg-12">
+            <div class="ts-map ts-shadow__sm">
+              <div class="ts-form__map-search ts-z-index__2" >
+                <!-- <form class="ts-form h-100">
+                                    <div class="card h-100" id="form-filter">
+                                        <div class="card-header">
+                                            <select id="station-type" class="selectize-drop-header" placeholder="Pilih Tipe Pos...">
+                                                <option value="txt">Pos Duga Air</option>
+                                                <option value="md">Pos Curah Hujan</option>
+                                                <option value="html">Pos Klimatologi</option>
+                                            </select>
+                                        </div>
+                                        <div class="card-body overflow-scroll">
+                                            <div>
+                                                <div class="card content-logger mb-2">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-sm-3 content-sensor bg-awlr d-flex text-center">
+                                                            <div class="justify-content-center align-self-center w-100">
+                                                                <h4><i class="ti-stats-up fw-bold me-1"></i> 20 m</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <div class="card-body content-station">
+                                                                <h5 class="card-title mb-1">AWLR MANGGU</h5>
+                                                                <p class="card-text">Senin, 28 Maret 2022 <span class="float-end">14:50 WIB</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form> -->
+                <form class="ts-form">
+                  <div class="accordion custom-accordion" id="custom-accordion-one">
+                    <div class="card mb-0" id="form-filter">
+                      <div class="card-header" id="headingNine" style="padding:1rem 1.25rem;">
+                        <h5 class="m-0 position-relative">
+                          <a class="custom-accordion-title text-reset d-block d-flex align-items-center" data-bs-toggle="collapse" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                            DAFTAR POS TELEMETRI <i class="mdi mdi-minus accordion-arrow"></i>
+                          </a>
+                        </h5>
+                      </div>
+
+                      <div id="collapseNine" class="collapse show overflow-auto" aria-labelledby="headingFour" data-bs-parent="#custom-accordion-one">
+                        <div class="card-body p-0 overflow-scroll">
+                          <div class="accordion accordion-flush" id="accordionStation">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header mt-0" id="flush-awlr">
+                                <button class="accordion-button shadow-none fw-bold text-uppercase collapsed d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#tab-awlr" aria-expanded="false" aria-controls="tab-awlr">
+                                  <div class="justify-content-center align-self-center">
+                                    POS DUGA AIR <span class="badge bg-primary ms-1 font-12" id="total-awlr">0</span>
+                                  </div>
+                                </button>
+                              </h2>
+                              <div id="tab-awlr" class="accordion-collapse collapse" aria-labelledby="flush-awlr" data-bs-parent="#accordionStation" style="">
+                                <div class="accordion-body">
+                                  <ul class="list-group" id="group-awlr">
+
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header mt-0" id="flush-arr">
+                                <button class="accordion-button shadow-none fw-bold text-uppercase collapsed d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#tab-arr" aria-expanded="false" aria-controls="tab-arr">
+                                  <div class="justify-content-center align-self-center">
+                                    POS CURAH HUJAN <span class="badge bg-success ms-1 font-12" id="total-arr">0</span>
+                                  </div>
+                                </button>
+                              </h2>
+                              <div id="tab-arr" class="accordion-collapse collapse" aria-labelledby="flush-arr" data-bs-parent="#accordionStation" style="">
+                                <div class="accordion-body">
+                                  <ul class="list-group" id="group-arr">
+
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="accordion-item">
+                                                            <h2 class="accordion-header mt-0" id="flush-klimatologi">
+                                                            <button class="accordion-button shadow-none fw-bold text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tab-klimatologi" aria-expanded="false" aria-controls="tab-klimatologi">
+                                                                POS KLIMATOLOGI
+                                                            </button>
+                                                            </h2>
+                                                            <div id="tab-klimatologi" class="accordion-collapse collapse" aria-labelledby="flush-klimatologi" data-bs-parent="#accordionStation" style="">
+                                                                <div class="accordion-body">
+                                                                    <ul class="list-group">
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+              <!-- <div id="ts-map-hero" class="ts-z-index__1" 
+                                    data-ts-map-leaflet-provider="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
+                                    data-ts-map-zoom-position="bottomright" 
+                                    data-ts-map-scroll-wheel="1" 
+                                    data-ts-map-zoom="8" 
+                                    data-ts-map-center-latitude="-3.4447173"
+                                    data-ts-map-center-longitude="128.4419633"
+                                    data-ts-marker="a" 
+                                    data-ts-locale="en-US" 
+                                    data-ts-display-additional-info="das_Das;stationtypename_Stationtypename;name_Name" 
+                                    style="height: 100%;width: 100%;position: relative;outline: none;">
+                                </div>
+                            </div> -->
+              <div id="ts-map-hero" class="ts-z-index__1" style="height: 100%;width: 100%;position: relative;outline: none;"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <script>
+              document.write(new Date().getFullYear())
+
+            </script> &copy; Dinas Pekerjaan Umum dan Penataan Ruang Bidang Sumber Daya Air Cianjur
+          </div>
+          <div class="col-md-6">
+            <!-- <div class="text-md-right">
+                    <a href="javascript:void(0);"><i class="mdi mdi-facebook text-white" style="font-size:18px;"></i></a>
+                    <a href="javascript:void(0);"><i class="mdi mdi-youtube text-white" style="font-size:18px;"></i></a>
+                    <a href="javascript:void(0);">Contact Us</a>
+                </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <div class="modal fade" id="modalDetail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalAddUserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalAddUserLabel">Detail Pos</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-2 pl-3 pr-3 pb-3">
+          <div class="d-flex justify-content-start mb-3">
+            <div class="image-container">
+              <a href="peta/assets/images/default-image.png" class="image-popup" title="" id="detail_image_url" style="cursor: zoom-in;">
+                <img src="peta/assets/images/default-image.png" class="rounded avatar-xl" alt="" id="detail_image">
+              </a>
+            </div>
+            <div class="userData ms-3">
+              <figure class="ts-item__info">
+                <h4 class="mb-1"></h4>
+                <dl>
+                  <dt>
+                    <h4 class="font-13 text-muted text-uppercase mb-2">NAMA POS</h4>
+                  </dt>
+                  <dd>
+                    <h4 class="mt-0" id="detail_station_name">ARR Pancaroba</h4>
+                  </dd>
+                </dl>
+              </figure>
+            </div>
+            <div class="ml-auto">
+              <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
+            </div>
+          </div>
+          <ul class="nav nav-tabs nav-bordered nav-justified" id="nav-tab">
+            <li class="nav-item">
+              <a href="#tab-detail-informasi-pos" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+                INFORMASI POS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab-detail-data" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                DATA TELEMETRI
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab-detail-grafik" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                GRAFIK
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab-detail-informasi-pos">
+              <dl class="row">
+                <dt class="col-4 col-lg-3">No. Register Pos</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_no_register">-</dd>
+
+                <dt class="col-4 col-lg-3">Tipe Pos</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_station_type">Pos Curah Hujan</dd>
+
+                <dt class="col-4 col-lg-3">Device ID</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_device_id">HGT72</dd>
+
+                <dt class="col-4 col-lg-3">Wilayah Sungai</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_wilayah_sungai">-</dd>
+
+                <dt class="col-4 col-lg-3">Daerah Aliran Sungai</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_das">-</dd>
+
+                <dt class="col-4 col-lg-3">Elevasi</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_elevation">-</dd>
+
+                <dt class="col-4 col-lg-3">Dibangun Tahun</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_built_year">-</dd>
+              </dl>
+
+              <h5 class="header-title bg-light p-1 mt-0 mb-2"><i class="mdi mdi-map-marker"></i> Lokasi</h5>
+
+              <dl class="row">
+                <dt class="col-4 col-lg-3">Koordinat</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_coordinate">0.029136, 109.616305</dd>
+
+                <dt class="col-4 col-lg-3">Provinsi</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_province">-</dd>
+
+                <dt class="col-4 col-lg-3">Kabupaten / Kota</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_city">-</dd>
+
+                <dt class="col-4 col-lg-3">Kecamatan</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_district">-</dd>
+
+                <dt class="col-4 col-lg-3">Kelurahan / Desa</dt>
+                <dt class="col-1 col-lg-1 p-0 text-center">:</dt>
+                <dd class="col-7 col-lg-8" id="detail_village">-</dd>
+              </dl>
+            </div>
+            <div class="tab-pane" id="tab-detail-data">
+              <div class="row">
+                <div class="col-4 col-sm-6 col-lg-4">
+                  <label for="time_type">Waktu</label>
+                  <fieldset class="form-group">
+                    <select class="form-control ts-selected" id="time_type">
+                      <option value="minute" selected>Menit</option>
+                      <option value="hour">Jam-Jaman</option>
+                      <option value="day">Harian</option>
+                    </select>
+                  </fieldset>
+                </div>
+                <div class="col-8 col-sm-6 col-lg-4">
+                  <label for="periode">Periode</label>
+                  <fieldset class="form-group">
+                    <input type="text" class="form-control" id="periode" name="periode" autocomplete="off">
+                  </fieldset>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4">
+                  <label class="d-none d-sm-none d-lg-block">&nbsp;</label>
+                  <fieldset class="form-group">
+                    <button type="button" class="btn btn-primary w-100" id="btnDataTelemetri"><i class="fa fa-search"></i> Lihat Data</button>
+                  </fieldset>
+                </div>
+              </div>
+              <p class="text-muted font-weight-bold small text-center" id="data-telemetry-info"></p>
+              <div class="table-responsive">
+                <table class="table nowrap w-100" id="data-telemetry-table">
+                  <thead class="table-light"></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-detail-grafik">
+              <div class="row">
+                <div class="col-4 col-sm-6 col-lg-4">
+                  <label for="time_type_chart">Waktu</label>
+                  <fieldset class="form-group">
+                    <select class="form-control  ts-selected" id="time_type_chart">
+                      <option value="minute" selected>Menit</option>
+                      <option value="hour">Jam-Jaman</option>
+                      <option value="day">Harian</option>
+                    </select>
+                  </fieldset>
+                </div>
+                <div class="col-8 col-sm-6 col-lg-4">
+                  <label for="periode_chart">Periode</label>
+                  <fieldset class="form-group">
+                    <input type="text" class="form-control" id="periode_chart" name="periode_chart" autocomplete="off">
+                  </fieldset>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4">
+                  <label class="d-none d-sm-none d-lg-block">&nbsp;</label>
+                  <fieldset class="form-group">
+                    <button type="button" class="btn btn-primary w-100" id="btnChart"><i class="fa fa-search"></i> Lihat Data</button>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="mt-3" id="divChart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="peta/assets/libs/tippy.js/tippy.js.min.js"></script>
+  <script>
+  window.baseUrl = "index.html";
+  window.baseUrlAsset = baseUrl + "/storage/";
+
+</script>
+
+<!-- bundle -->
+<!-- Vendor js -->
+<script src="peta/assets/js/vendor.min.js"></script>
+<script src="../code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+<script src="peta/assets/libs/moment/moment.min.js"></script>
+<script src="peta/assets/libs/moment-locale/moment-locale.min.js"></script>
+<script src="peta/assets/libs/moment-timezone-with-data/moment-timezone-with-data.min.js"></script>
+<script src="peta/assets/libs/select2/select2.min.js"></script>
+<script src="peta/assets/libs/selectize/selectize.min.js"></script>
+<!-- App js -->
+<script src="peta/assets/js/app.min.js"></script>
+<script src="peta/assets/js/src/main.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPHLJLH5QK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-CPHLJLH5QK');
+    </script>
+    <!-- Default counter code for Higertech
+    http://higertech.com -->
+    <script type="text/javascript">
+    var sc_project=12859962; 
+    var sc_invisible=1; 
+    var sc_security="a6833db9"; 
+    </script>
+    <script type="text/javascript"
+    src="../www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics
+    Made Easy - Statcounter" href="https://statcounter.com/"
+    target="_blank"><img class="statcounter"
+    src="https://c.statcounter.com/12859962/0/a6833db9/1/"
+    alt="Web Analytics Made Easy - Statcounter"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of counterCode -->
+  <script src="peta/assets/libs/select2/select2.min.js"></script>
+  <script src="peta/assets/libs/datatables/datatables.min.js"></script>
+
+  <script src="../code.highcharts.com/stock/highstock.html"></script>
+  <script src="../code.highcharts.com/stock/modules/data.html"></script>
+  <script src="../code.highcharts.com/stock/modules/exporting.html"></script>
+
+  <script src="peta/assets/libs/moment/moment.min.js"></script>
+  <script src="peta/assets/libs/moment-locale/moment-locale.min.js"></script>
+  <script src="peta/assets/libs/moment-timezone-with-data/moment-timezone-with-data.min.js"></script>
+  <script src="peta/assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="peta/assets/libs/magnific-popup/magnific-popup.min.js"></script>
+  <script src="peta/assets/js/pages/gallery.init.js"></script>
+
+  
+
+  <script src="../unpkg.com/leaflet%401.5.1/dist/leaflet.js"></script>
+  <script src="../api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js"></script>
+  <script src='../cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.4/leaflet.markercluster.js'></script>
+  <!-- <script src="https://www.mapbox.com/mapbox.js/assets/data/realworld.388.js"></script> -->
+
+  <!--we need the topojson library as well-->
+  <script src="../unpkg.com/topojson%403.0.2/dist/topojson.min.js"></script>
+
+
+  <script src="peta/assets/maps/leaflet-mapbox-gl.js"></script>
+
+  <script>
+    // var baseUrl = "http://sahih.higertech.com";
+    // let token = $('meta[name="csrf-token"]').attr('content');
+    const timezone = 'WIB';
+    const base_latitude = 6.1750;
+    const base_longitude = 106.8283;
+    const currDate = "2023-11-21";
+    const currMonth = "2023-11";
+
+  </script>
+
+  
+  <script src="js/pages/peta/peta.min.js"></script>
+
+
+
+</body>
+
+<!-- Mirrored from sahih.higertech.com/map by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Nov 2023 17:13:14 GMT -->
+</html>
