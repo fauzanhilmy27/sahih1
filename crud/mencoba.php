@@ -1,29 +1,8 @@
-<?php
-include "index.html";
-include "koneksi.php";
-?>
-<?php
-
-if(isset($_GET['nama']) && !empty($_GET['nama'])) {
-    $nama = $_GET['nama'];
-
-    $sql = "SELECT * FROM pos WHERE nama='$nama' ORDER BY `nama` DESC";
-    $result = $koneksi->query($sql);
-
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc(); // Mengambil baris data sebagai array asosiatif
-    } else {
-        echo "Data tidak ditemukan.";
-    }
-} else {
-    echo "Nama tidak ditemukan.";
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-6">
-<title>Edit Data</title>
+<title>Edit</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -51,8 +30,8 @@ if(isset($_GET['nama']) && !empty($_GET['nama'])) {
       <!-- <div class="card">
         <div class="card-body"> -->
     <div class="container mt-5">
-        <h2 class="mb-4">Edit Data</h2>
-        <form action="PosDugaAir_Proses_Edit.php" method="POST" onsubmit="return validateForm()">
+        <h2 class="mb-4">Tambah Data</h2>
+        <form action="PosDugaAir_Proses_Tambah.php" method="POST" onsubmit="return validateForm()">
             <div class="row">
                 <div class="col-lg-6">
                 <div class="mb-3">
@@ -171,8 +150,7 @@ if(isset($_GET['nama']) && !empty($_GET['nama'])) {
                     <!-- Tambahkan input lainnya di sini -->
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary btn">Submit</button>
-            <a href="PosDugaAir.php" class="btn btn-danger btn">Kembali</a>
+            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
         </form>
     </div>
 </div>

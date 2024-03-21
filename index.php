@@ -623,13 +623,13 @@
   <div class="row mb-4">
     <div class="col-lg-12">
       <div class="ts-map ts-shadow__sm" style="border-radius: 5px;">
-      <!--
+      
         <div class="ts-form__map-search ts-z-index__2">
           <form class="ts-form" id="form-filter">
             <a href=".ts-form collapse" data-toggle="collapse" class="ts-center__vertical justify-content-between" >
               <h5 class="mb-0 mt-0 w-100"><i class="fe-filter mr-1"></i> Filter Data</h5>
             </a>
-            <div class="ts-form-collapse ts-xs-hide-collapse collapse p-1 ">
+            <div class="ts-form-collapse collapse p-1 ">
               <div id="features-checkboxes">
                 <label class="mt-2 mb-1 font-weight-bold">Nama Pos :</label>
                 <input type="text" class="form-control" id="filter_name" name="filter_name" placeholder="Nama Pos">
@@ -668,7 +668,7 @@
             </div>
           </form>
         </div>
-      -->
+     
         <div id="ts-map-hero" class="ts-z-index__1" data-ts-map-leaflet-provider="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" data-ts-map-leaflet-attribution='&copy;     Dinas Pekerjaan Umum dan Penataan Ruang Bidang Sumber Daya Air Cianjur' data-ts-map-zoom-position="bottomright" data-ts-map-scroll-wheel="1" data-ts-map-zoom="9" data-ts-map-center-latitude="-6.8176246" data-ts-map-center-longitude="107.1110369" data-ts-marker="a" data-ts-locale="en-US" data-ts-display-additional-info="das_Das;stationtypename_Stationtypename;name_Name" style="height: 500px;border-radius: 5px;">
         </div>
       </div>

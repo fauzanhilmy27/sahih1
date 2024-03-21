@@ -27,33 +27,37 @@ crossorigin="anonymous"></script>
 </style>
   </head>
   <body>
+
+    
     <br></br>
     <br></br>
     <div class="container mt-4">
         <div class="row">
             <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-body">
+                <!-- <div class="card">
+                    <div class="card-body"> -->
+                    
                         <h2 class="h2">Data DugaPosAir</h2>
                         <!-- Tombol Tambah -->
-                        <a href="PosDugaAir_Tambah.php" class="btn btn-primary">Tambah Data</a>
+                        <a href="PosDugaAir_Tambah.php" class="btn btn-primary" class="btn">Tambah Data</a>
                         <div class="table-responsive">
+                            
                             <div class="table-box">
                               <!-- Tabel yang muncul -->
                                 <table class="table table-striped">
                                     <thead>
-                                        <tr>
+                                        <tr row="row">
                                             <th>Nama</th>
                                             <th>Device ID</th>
-                                            <th>cctv</th>
+                                            <!-- <th>cctv</th>
                                             <th>mercu</th>
                                             <th>NoRegisterPos</th>
-                                            <th>TipePos</th>
+                                            <th>TipePos</th> -->
                                             <th>TanggalPemasangan</th>
-                                            <th>WilayahSungai</th>
-                                            <th>Elevasi</th>
+                                            <!-- <th>WilayahSungai</th>
+                                            <th>Elevasi</th> -->
                                             <th>DaerahAliranSungai</th>
-                                            <th>SubDaerahAliranSungai</th>
+                                            <!-- <th>SubDaerahAliranSungai</th>
                                             <th>DibagunOleh</th>
                                             <th>DibagunTahun</th>
                                             <th>DirenovasiOleh</th>
@@ -66,49 +70,57 @@ crossorigin="anonymous"></script>
                                             <th>Kecamatan</th>
                                             <th>Kelurahan/Desa</th>
                                             <th>Lebar</th>
-                                            <th>Coef</th>
-                                            <th>Action</th>
+                                            <th>Coef</th>-->
+                                            <th>Action</th> 
+
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
+                                      
+ 
                                         $sql = "SELECT * FROM pos";
                                         $result = $koneksi->query($sql);
+                                        
+				
+                                        
 
                                         if ($result->num_rows > 0) {
                                             // Tampilkan data
                                             while ($row = $result->fetch_assoc()) {
-                                                echo "<tr><td>" . $row["nama"] . "</td><td>"
+                                                echo 
+                                                '<tr role="row" class="odd"><td><a href="javascript:void(0)" class="text-blue font-weight-bold"  onclick="modalopen(',$row["nama"],'); ">',$row["nama"],'</a></td><td>'
+                                                // "<tr><td>" . $row["nama"] . "</td><td>"
                                                     . $row["device_id"] . "</td><td>"
-                                                    . $row["cctv"] . "</td><td>"
-                                                    . $row["mercu"] . "</td><td>"
-                                                    . $row["NoRegisterPos"] . "</td><td>"
-                                                    . $row["TipePos"] . "</td><td>"
+                                                    // . $row["cctv"] . "</td><td>"
+                                                    // . $row["mercu"] . "</td><td>"
+                                                    // . $row["NoRegisterPos"] . "</td><td>"
+                                                    // . $row["TipePos"] . "</td><td>"
                                                     . $row["TanggalPemasangan"] . "</td><td>"
-                                                    . $row["WilayahSungai"] . "</td><td>"
-                                                    . $row["Elevasi"] . "</td><td>"
-                                                    . $row["DaerahAliranSungai"] . "</td><td>"
-                                                    . $row["SubDaerahAliranSungai"] . "</td><td>"
-                                                    . $row["DibangunOleh"] . "</td><td>"
-                                                    . $row["DibangunTahun"] . "</td><td>"
-                                                    . $row["DirenovasiOleh"] . "</td><td>"
-                                                    . $row["DirenovasiTahun"] . "</td><td>"
-                                                    . $row["Keterangan"] . "</td><td>"
-                                                    . $row["lat"] . "</td><td>"
-                                                    . $row["lon"] . "</td><td>"
-                                                    . $row["Provinsi"] . "</td><td>"
-                                                    . $row["Kabupaten_Kota"] . "</td><td>"
-                                                    . $row["Kecamatan"] . "</td><td>"
-                                                    . $row["Kelurahan_Desa"] . "</td><td>"
-                                                    . $row["lebar"] . "</td><td>"
-                                                    . $row["coef"] . "</td>";
+                                                    // . $row["WilayahSungai"] . "</td><td>"
+                                                    // . $row["Elevasi"] . "</td><td>"
+                                                    . $row["DaerahAliranSungai"] . "</td><td>";
+                                                    // . $row["SubDaerahAliranSungai"] . "</td><td>"
+                                                    // . $row["DibangunOleh"] . "</td><td>"
+                                                    // . $row["DibangunTahun"] . "</td><td>"
+                                                    // . $row["DirenovasiOleh"] . "</td><td>"
+                                                    // . $row["DirenovasiTahun"] . "</td><td>"
+                                                    // . $row["Keterangan"] . "</td><td>"
+                                                    // . $row["lat"] . "</td><td>"
+                                                    // . $row["lon"] . "</td><td>"
+                                                    // . $row["Provinsi"] . "</td><td>"
+                                                    // . $row["Kabupaten_Kota"] . "</td><td>"
+                                                    // . $row["Kecamatan"] . "</td><td>"
+                                                    // . $row["Kelurahan_Desa"] . "</td><td>"
+                                                    // . $row["lebar"] . "</td><td>"
+                                                    // . $row["coef"] . "</td>";
                                                  
 
                                                 // Tombol Edit
-                                                echo "<td><a href='PosDugaAir_Edit.php?nama=" . $row["nama"] . "' class='btn btn-primary'>Edit</a></td>";
+                                                echo "<a href='PosDugaAir_Edit.php?nama=" . $row["nama"] . "' class='btn btn-primary'><i class='fas fa-pencil-alt'></i> Edit</a>";
                                                 
                                                 // Tombol Hapus
-                                               echo "<td><a href='PosDugaAir_Hapus.php?id=" .$row["id"] ."'class='btn btn-danger btn-sm' >Hapus</a></td>";
+                                               echo "<a href='PosDugaAir_Hapus.php?id=" .$row["id"] ."'class='btn btn-danger'><i class='fas fa-trash-alt'></i> Hapus</a></td>";
                                                 
                                                 echo "</tr>";
                                               }
@@ -118,8 +130,18 @@ crossorigin="anonymous"></script>
                                             $koneksi->close();
                                             ?>
                                                 </tbody>
+                                                
                                   </table>
-                            </div>
+                                  <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+                  </div>
                         </div>
                      </div>
                 </div>
@@ -130,6 +152,17 @@ crossorigin="anonymous"></script>
 
 
     </form>
+    <!-- <script type="text/javascript">
 
+
+function modalopen(id){
+  fet(id);
+ // console.log(id);
+
+  $("#modalDetail").modal('show');
+
+  
+}
+</script> -->
 </body>
 </html>

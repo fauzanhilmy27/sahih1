@@ -12,12 +12,14 @@ include "index.html";
 <style>
     /* CSS untuk mengatur lebar input */
     .short-input {
-        width: 300px; /* Atur lebar input sesuai kebutuhan */
+        width: 450px; /* Atur lebar input sesuai kebutuhan */
     }
     .solid-box {
         border: 1px solid #ddd; /* Atur border */
         overflow-y: auto; /* Atur overflow ke auto untuk scroll vertikal */
-        max-height: 450px; /* Atur tinggi maksimal kotak */
+        max-height: 500px; /* Atur tinggi maksimal kotak */
+        margin-left: -100px; /* Posisikan ke kanan */
+        margin-right: -100px; /* Posisikan ke kiri */
     }
     
 </style>
@@ -27,9 +29,9 @@ include "index.html";
     <br></br>
 <div class="container mt-4">
     <div class="col-lg-12">
-    <div class="solid-box">
-      <div class="card">
-        <div class="card-body">
+    <!-- <div class="solid-box"> -->
+      <!-- <div class="card">
+        <div class="card-body"> -->
     <div class="container mt-5">
         <h2 class="mb-4">Tambah Data</h2>
         <form action="PosDugaAir_Proses_Tambah.php" method="POST" onsubmit="return validateForm()">
@@ -147,7 +149,9 @@ include "index.html";
                     <!-- Tambahkan input lainnya di sini -->
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+            <button type="submit" class="btn btn-primary btn">Submit</button>
+            <a href="PosDugaAir.php" class="btn btn-danger btn">Kembali</a>
+            
         </form>
     </div>
 </div>
